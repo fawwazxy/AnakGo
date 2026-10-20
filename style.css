@@ -183,6 +183,21 @@ p{margin:0}
 .fresh.stale{background:var(--wait-l);color:var(--wait)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:5px 6px 5px 5px;border-radius:999px;background:#f8fafc;border:1px solid var(--line);font-weight:700;font-size:13px}
+button.chip:hover{border-color:var(--brand);background:var(--brand-l)}
+/* Per-child tracking: child tabs + status card */
+.kidtabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;margin:-6px 0 4px;scrollbar-width:none}
+.kidtabs::-webkit-scrollbar{display:none}
+.kidtab{position:relative;display:inline-flex;align-items:center;gap:8px;flex:none;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:5px 16px 5px 5px;font-weight:700;font-size:14px;color:var(--ink-2);transition:all .2s}
+.kidtab:hover{border-color:#9ee0dc}
+.kidtab.on{border-color:var(--brand);background:var(--brand-l);color:var(--brand-d);box-shadow:0 8px 20px -12px rgba(14,165,160,.8)}
+.livedot{position:absolute;top:2px;left:28px;width:11px;height:11px;border-radius:50%;background:var(--err);border:2px solid #fff;color:var(--err);animation:ping 1.2s infinite}
+.follow{display:grid;gap:12px;padding:14px 4px 4px}
+.follow-head{display:flex;align-items:center;gap:12px}
+.follow-head h2{font-size:18px;line-height:1.3}
+.follow-head p{color:var(--muted);font-size:13.5px;font-weight:600;margin-top:3px}
+.follow .journey{background:#f8fafc}
+.follow-drv{padding:12px;border:1px solid var(--line);border-radius:16px}
+.follow .empty{padding:18px 10px 8px}
 .buspin{position:relative}
 .buspin .bus{position:absolute;inset:6px;display:grid;place-items:center;font-size:22px;background:#fff;border-radius:50%;box-shadow:0 6px 18px rgba(15,27,45,.35);border:3px solid var(--brand)}
 .buspin .pulse{position:absolute;inset:0;border-radius:50%;background:rgba(14,165,160,.35);animation:pulse 1.8s ease-out infinite}
